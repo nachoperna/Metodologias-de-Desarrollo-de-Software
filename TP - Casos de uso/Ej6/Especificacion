@@ -1,0 +1,25 @@
+- Especificacion CU:
+    - Nombre: Ver mapa de basura
+    - Descripcion: Este caso de uso implementa funcionalidad para visualizar un mapa de la ciudad donde se encuentran los puntos con basura a recoger.
+    - Actor primario: Jefe de cuadrilla
+    - Actor secundario: Subsecretario de medio ambiente.
+    - Trigger:
+    - Flujo basico:
+        1. El CU comienza cuando el Jefe de cuadrilla quiere ver el mapa de basura de la ciudad.
+        2. El sistema le muestra al Jefe de cuadrilla el mapa de basura de la ciudad.
+        3. PtoExt.
+        4. Fin CU.
+
+- Especificacion CU:
+    - Nombre: Resolver denuncia.
+    - Descripcion: Este caso de uso implementa funcionalidad para permitirle al Jefe de cuadrilla marcar una denuncia como resuelta.
+    - Actor primario: Jefe de cuadrilla.
+    - Actor secundario: Ciudadano.
+    - Trigger: El Jefe de cuadrilla quiere resolver una denuncia.
+    - Flujo basico:
+        1. Este CU comienza cuando el Jefe de cuadrilla quierer marcar una denuncia como resuelta.
+        2. El sistema le solicita al Jefe de cuadrilla el numero de denuncia, dia y horario donde se soluciono el problema y una foto del lugar limpio.
+        3. El Jefe de cuadrilla brinda la informacion solicitada.
+        4. El sistema actualiza el mapa de basura quitando el lugar donde se recolecto la basura.
+        5. El sistema notifica al Ciudadano que su denuncia realizada en ese lugar fue resuelta.
+        6. Fin CU.
