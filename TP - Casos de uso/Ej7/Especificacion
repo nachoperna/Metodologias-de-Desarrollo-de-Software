@@ -1,0 +1,53 @@
+- Especificacion CU:
+    - Nombre: Suscribirse a serie
+    - Descripcion: Este caso de uso implementa funcionalidad para posibilitar al usuario del sistema de suscribirse a una serie.
+    - Actor primario: Usuario
+    - Actor secundario: Sistema.
+    - Trigger: "
+    - Flujo basico:
+        1. El CU comienza cuando el Usuario quiere suscribirse a una serie.
+        2. El sistema verifica que la cuenta de Usuario este validada.
+        3. El sistema le pide al Usuario informacion sobre que quiere ser notificado (nuevo capitulo online, nueva temporada online, nuevo capitulo) y en que idioma ser notificado (ingles o español).
+        4. El Usuario brinda la informacion del cuestionario.
+        5. Fin CU.
+    - Flujo alternativo(2.):
+        2.1) El sistema verifica que la cuenta del Usuario no esta validada para suscribirse a una serie.
+        2.2) El sistema le informa al Usuario que su cuenta no esta validada.
+        2.3) El sistema redirije al Usuario a Validar cuenta.
+        2.4) Fin CU alternativo.
+
+- Especificacion CU:
+    - Nombre: Buscar serie
+    - Descripcion: Este CU implementa funcionalidad para que el usuario pueda buscar informacion sobre una serie en el sistema y si lo desea, suscribirse a ella.
+    - Actor primario: Usuario.
+    - Actor secundario: Sistema.
+    - Trigger: "
+    - Flujo basico: 
+        1. Este CU comienza cuando el Usuario quiere buscar una serie en el sistema.
+        2. El sistema le solicita al Usuario el nombre de un actor, actriz, nombre de personaje, o nombre de serie para la busqueda.
+        3. El Usuario entrega la informacion pedida.
+        4. El sistema verifica la validez de los datos.
+        5. El sistema muestra al Usuario el nombre de la serie, los actores que participaron en ella, un resumen de los capitulos, fotos de los personajes, y series relacionadas.
+        6. PtoExt.
+        7. [INCLUDE] Recomendar.
+        8. Fin CU.
+    - Flujo alternativo (4.):
+        4.1) El sistema no obtiene resultados validos con los datos ingresados por el Usuario.
+        4.2) El sistema le informa al Usuario sobre la situacion.
+        4.3) El sistema redirije a: Flujo Basico - 2.
+        4.4) Fin CU alternativo.
+    - Caso de uso incluido: Recomendar.
+
+- Especificacion CU:
+    - Nombre: Recomendar
+    - Descripcon: Este CU implementa funcionalidad para permitirle al Usuario recomendar una serie o busqueda de serie en Facebook.
+    - Actor primario: Usuario.
+    - Actor secundario: Sistema.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el usuario el Usuario finalizo de ver una serie o de realizar una busqueda.
+        2. El sistema le solicita al Usuario la audiencia de publicacion (post publico, mensaje privado a un amigo, post en el muro de un amigo).
+        3. El Usuario brinda informacion sobre la audiencia de publicacion.
+        4. El sistema le solicita al Usuario elegir entre foto o video representativo de la actividad.
+        5. El Usuario hace la eleccion.
+        6. Fin CU.
