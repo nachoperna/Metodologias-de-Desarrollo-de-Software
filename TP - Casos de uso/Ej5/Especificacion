@@ -1,0 +1,40 @@
+- Especificacion CU:
+    - Nombre: Ver lista de equipos
+    - Descripcion: Este CU implementa funcionalidad para listar los equipos participantes de la copa mundial.
+    - Actor primario: Usuario
+    - Actor secundario: -
+    - Trigger: Este CU se activa cuando el Usuario quiere ver todos los equipos participantes de la copa mundial.
+    - Flujo basico:
+        1. El CU comienza cuando el Usuario quiere ver los equipos participantes de la copa.
+        2. El sistema le entrega al Usuario informacion de los equipos (nombre, resumen de participaciones anteriores, jugadores del equipo).
+        3. PtoExt.
+        4. [INCLUDE] Notificar.
+        5. Fin CU.
+    - Casos de uso incluidos: Notificar.
+    - Casos de uso que extiende: Ver lista de jugadores.
+
+- Especificacion CU:
+    - Nombre: Ver lista de jugadores.
+    - Descripcion: Este CU implementa funcionalidad para listar los jugadores participantes de la copa mundial.
+    - Actor primario: Usuario.
+    - Actor secundario: -
+    - Trigger:
+    - Flujo basico:
+        1. El CU comienza cuando el Usuario quiere ver los jugadores participantes de la copa.
+        2. El sistema le entrega al Usuario la lista de todos los jugadores particpantes de la copa.
+        3. El sistema le muestra al Usuario el perfil de cada jugador (foto, posicion, biografia, estadisticas).
+        4. Fin CU.
+    - Caso de uso extendido: Extiende el caso de uso Ver lista de equipos cuando el Usuario quiere ver los jugadores parte de un equipo en el punto de extension PtoExt.
+
+- Especificacion CU:
+    - Nombre: Notificar.
+    - Descripcion: Este CU implementa funcionalidad para dar aviso al usuario el resultado de un partido.
+    - Actor primario: Usuario.
+    - Actor secundario: FIFA.
+    - Trigger: 
+    - Flujo basico: 
+        1. Este CU comienza cuando el Usuario quiere ser notificado del resultado de un partido especifico.
+        2. El sistema verifica cada 30 minutos el resultado del partido.
+        3. El sistema detecta la finalizacion del partido.
+        4. El sistema da aviso al Usuario.
+        5. Fin CU.

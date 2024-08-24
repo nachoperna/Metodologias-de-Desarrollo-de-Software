@@ -1,0 +1,52 @@
+- Especificacion CU
+    - Nombre: Reservar cancha
+    - Descripcion: Este caso de uso le brinda al Deportista la posibilidad de reservar una cancha para jugar algun deporte.
+    - Actor primario: Deportista.
+    - Actor secundario: Club.
+    - Trigger: Este CU se activa cuando el Deportista quiere reservar una cancha.
+    - Flujo basico:
+        1. El CU comienza cuando el Deportista quiere reservar una cancha.
+        2. El sistema le pide indicar tipo de cancha.
+        3. El sistema le pide indicar dia y horario de la reserva.
+        4. El Deportista le brinda la informacion.
+        5. [INCLUDE] Verificar disponibilidad.  
+        6. El sistema le pide al Deportista informacion del pago.
+        7. El Deportista brinda nombre, apellido, DNI, numero de tarjeta de credito, fecha de vencimiento de tarjeta, y codigo de seguridad de tarjeta.
+        8. [INCLUDE] Verificar pago.
+        9. El sistema asigna el turno al Deportista.
+        10. El sistema le informa al Deportista el monto a pagar.
+        11. El sistema le muestra al Deportista caracteristicas de la cancha reservada (el deporte de dicha cancha, ubicación en el predio, cantidad de
+deportistas; y días, horarios y duración del turno)
+        12. Fin CU.
+
+    - Flujo alternativo(5.Verificar disponibilidad):
+        5.1) El sistema le informa al usuario que no hay disponibilidad de la cancha en esa fecha.
+        5.2) Redirije a 3.
+        5.3) Fin CU alternativo.
+
+    - Flujo alternativo(8.Verificar pago):
+        8.1) El sistema le indica al Deportista que hubo un error con el pago.
+        8.2) Redirije a 6.
+        8.3) Fin CU alternativo.
+
+- Especificacion CU
+    - Nombre: Verificar disponibilidad
+    - Descripcion: 
+    - Actor primario: Club
+    - Actor secundario: Deportista
+    - Trigger: Este CU se activa cuando el Deportista brinda informacion sobre la cancha que quiere reservar.
+    - Flujo basico:
+        1. El sistema verifica la disponibilidad de la cancha segun la fecha y hora provista por el cliente.
+        2. Fin CU.
+    - Flujo alternativo:
+        1.1) No hay disponibilidad de la cancha en la fecha y horario deseado.
+        1.2) El sistema da aviso al cliente.
+        1.3) Fin CU.
+
+- Especificacion CU
+    - Nombre: Verificar pago
+    - Descripcion:
+    - Actor primario: Banco
+    - Actor secundario: Deportista
+    - Trigger:
+    - Flujo basico:

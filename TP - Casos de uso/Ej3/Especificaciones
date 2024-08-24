@@ -1,0 +1,51 @@
+- Especificacion CU
+    - Nombre CU: Consultar resumen
+    - Descripcion: Este caso de uso permite al FAN consultar un resumen de un capitulo junto con informacion variada del mismo.
+    - Actor primario: FAN
+    - Actor secundario: -
+    - Trigger: Este CU se activa cuando el actor primario FAN quiere consultar el resumen de un capitulo de la serie.
+    - Flujo basico:
+        1. El CU comienza cuando un FAN quiere consultar el resumen de un capitulo
+        2. El sistema le brinda al FAN una serie de capitulos con su informacion (nombre, sinopsis, fotos, videos, lista de personajes)
+        3. [INCLUDE] Ver lista de personajes.
+        4. Fin CU.
+    - Caso de uso incluido: Ver lista de personajes.
+
+- Especificacion CU
+    - Nombre: Ver lista de personajes
+    - Descripcion: Este caso de uso permite al FAN ver una lista completa de todos los personajes de la serie con informacion de los mismos.
+    - Actor primario: FAN
+    - Actor secundario: -
+    - Trigger: Este CU se activa cuando el FAN quiere ver una lista de personajes de la serie.
+    - Flujo basico: 
+        1. El CU comienza cuando un FAN quiere ver una lista de personajes de la serie.
+        2. El sistema le brinda al FAN una lista de todos los personajes de la serie.
+        3. [INCLUDE] Ver perfil de personaje
+        4. Fin CU.
+    - Caso de uso incluido: Ver perfil de personaje.
+
+- Especificacion CU:
+    - Nombre: Ver perfil de personaje.
+    - Descripcion: Este caso de uso permite al FAN ver informacion de un personaje en particular.
+    - Actor primario: FAN.
+    - Actor secundario: -
+    - Trigger: Este CU se activa cuando el FAN decide ver informacion de un personaje. 
+    - Flujo basico: 
+        1. El CU comienza cuando el FAN quiere ver informacion de un personaje.
+        2. El sistema le brinda nombres de capitulos en los que aparecen, su biografia, fotos, nombre y escudo de la casa a la que pertenece.
+        3. [INCLUDE] Ver caracteristicas de casa.
+        4. Fin CU.
+    - Caso de uso incluido: Ver caracteristicas de casa.
+
+- Especificacion CU:
+    - Nombre: Ver caracteristicas de casa.
+    - Descripcion: Este caso de uso permite al FAN ver informacion de una casa de la serie en particular.
+    - Actor primario: FAN.
+    - Actor secundario: -
+    - Trigger: Este CU se activa cuando el FAN quiere ver informacion de una casa en particular.
+    - Flujo basico: 
+        1. El CU comienza cuando el FAN quiere ver informacion de una casa.
+        2. El sistema le brinda nombre, historia, escudo, descripcion, lema de la casa y arbol geneaolgico.
+        3. [INCLUDE] Ver perfil de personaje.
+        4. Fin CU.
+    - Caso de uso incluido: Ver perfil de personaje.
