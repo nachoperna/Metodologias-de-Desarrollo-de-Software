@@ -1,0 +1,51 @@
+- Especificacion CU:
+    - Nombre: Autorizar pago
+    - Descripcion: Este CU implementa funcionalidad para permitirle al usuario autorizar el pago de una compra mediante su huella digital.
+    - Actor primario: Usuario
+    - Actor secundario: Sistema
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el Usuario necesita autorizar un pago para la compra de algun producto. 
+        2. El sistema le pide al Usuario que brinde su huella en el lector biometrico del POSNet.
+        3. El Usuario brinda su huella al sistema.
+        4. El sistema comprueba con su base de datos si la huella coincide con la registrada.
+        5. El sistema da aviso al Usuario que su compra ha sido registrada.
+        6. Fin CU.
+    - FLujo alternativo (4.):
+        4.1) El sistema verifica que el Usuario ingreso 3 veces incorrectamente su huela digital.
+        4.2) El sistema da aviso al Usuario del inconveniente.
+        4.3) El sistema se relaciona con el caso de uso Desactivar servicio para cancelar el sistema de pagos electronicos del Usuario.
+        4.4) Fin CU alternativo.
+
+- Especificacion CU:
+    - Nombre: Comprar
+    - Descripcino: Este CU implementa funcionalidad para permitirle al usuairo comprar utilizando pagos electronicos.
+    - Actor primario: Usuario
+    - Actor secundario: Sistema
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el Usuario quiere comprar.
+        2. El Sistema le solicita al Usuario acercar su telefono movil al POSNet.
+        3. El Usuario acerca su telefono con tecnologia NFC al POSNet.
+        4. El Sistema recupera el monto de la transaccion y los detalles del comerdio del POSNet.
+        5. El sistema ejecuta un test para validar que el POSNet no sea apocrifo.
+        6. El sistema le solicita al Usuario que seleccione la tarjeta con la que va a efectuar el pago.
+        7. El Usuario selecciona la tarjeta.
+        8. [INCLUDE] Autorizar pago.
+        9. Fin CU.
+    - Caso de uso que extiende: Comprar con terceros.
+
+- Especificacion CU:
+    - Nombre: Comprar con terceros.
+    - Descripcion: Este CU implementa funcionalidad para permitirle al usuario realizar una compra usando aplicaciones de tercero.
+    - Actor primario: Usuario
+    - Actor secundario: Sistema.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el Usuario quiere realizar una compra usando aplicaciones de terceros.
+        2. PtoExt.
+        3. El sistema le brinda al Usuario la posibilidad de agregar una nueva tarjeta si lo desea en ese momento.
+        4. [INCLUDE] Autorizar pago.
+        5. Fin CU.
+        
+    
