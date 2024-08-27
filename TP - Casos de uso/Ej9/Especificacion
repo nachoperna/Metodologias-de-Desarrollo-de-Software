@@ -1,0 +1,19 @@
+- Especificacion CU:
+    - Nombre: Agregar evento
+    - Descripcion: Este CU implementa funcionalidad para permitirle al usuario agregar un evento a un calendario ya existente y registrado en el sistema.
+    - Actor primario: Usuario.
+    - Actor secundario: Gestor de calendario.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el usuario quiere agregar un nuevo evento a un calendario.
+        2. El sistema le pide al usuario que ingrese el calendario al que quiere agregar el evento, el titulo del evento, dia y horario en el que se realizara.
+        3. El usuario brinda esa informacion.
+        4. El sistema verifica si no hay solapamiento de eventos.
+        5. El sistema agrega el nuevo evento al calendario ingresado por el usuario.
+        6. El sistema informa del evento al calendario externo.
+        7. Fin CU.
+    - Flujo alternativo (4.):
+        4.1) El sistema comprueba que el evento ingresado por el usuario se solapa con otro ya existente en el calendario.
+        4.2) El sistema notifica al usuario de la situacion.
+        4.3) Sigue con el punto 5.
+        4.4) Fin CU alternativo.
