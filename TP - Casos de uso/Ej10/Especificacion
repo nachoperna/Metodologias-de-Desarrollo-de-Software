@@ -1,0 +1,67 @@
+- Especificacion CU:
+    - Nombre: Crear cuenta
+    - Descripcion: Este CU implementa funcionalidad para permitirle al estudiante crear una cuenta en el sistema OpenLinguo.
+    - Actor primario: Estudiante.
+    - Actor secundario: OpenLinguo.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el estudiante quiere registrar una nueva cuenta en la aplicacion OpenLinguo.
+        2. El sistema le solicita al estudiante su nombre, apellido, dirección de e-mail, edad, su idioma nativo y si cuentan o no con alguna certificación de algún otro idioma.
+        3. El estudiante brinda la informacion.
+        4. El sistema le solicita al estudiante la informacion de logueo de Facebook.
+        5. El estudiante brinda su informacino de logueo de Facebook.
+        6. El sistema verifica la informacion de los datos con Facebook.
+        7. El sistema le pide al estudiante que cargue una fotografia tipo carnet.
+        8. El estudiante sube su foto tipo carnet.
+        9. PtoExt.
+        10. Fin CU.
+    - Flujo alternativo (6.):
+        6.1) El sistma comprueba que validacion de logueo de Facebook fue erronea.
+        6.2) El sistema informa del error al estudiante.
+        6.3) Fin CU alternativo.
+
+- Especificacion CU:
+    - Nombre: Jugar
+    - Descripcon: Este CU implementa funcionalidad para permitirle a un estudiante resolver ejercicios gramaticales del idioma que elija.
+    - Actor primario: Estudiante.
+    - Actor secundario: OpenLinguo, Facebook, Tiempo
+    - Trigger: "
+    - Flujo basico: 
+        1. Este CU comienza cuando el estudiante quiere realizar un juego gramtical de algun idioma.
+        2. El sistema verifica que el estudiante este inscripto en al menos un idioma.
+        3. El sistema le pide al estudiante que seleccione con cual de los idiomas inscriptos quiere jugar.
+        4. El estudiante elije el idioma a jugar.
+        5. El sistema le entrega muestra al estudiante el test de preguntas gramaticales a contestar.
+        6. El sistema verifica la cantidad de respuestas incorrectas del estudiante.
+        7. El sistema verifica el tiempo transcurrido desde el inicio del juego.
+        8. El estudiante termina el cuestionario con menos de 3 respuestas incorrectas y antes del tiempo limite.
+        9. [INCLUDE]
+        10. Fin CU.
+
+    - Flujo alternativo (2.):
+        2.1) El sistema comprueba que el estudiante no esta inscripto a ningun idioma.
+        2.2) El sistema informa de la situacion al estudiante.
+        2.3) Fin CU alternativo.
+
+    - FLujo alternativo (6.):
+        6.1) El sistema comprueba que el estudiante tuvo 3 respuestas incorrectas.
+        6.2) El sistema finaliza el juego.
+        6.3) Fin CU alternativo.
+
+    - FLujo alternativo (7.):
+        7.1) El sistema comprueba que el tiempo transcurrido llego a los 5 minutos de juego.
+        7.2) El sistema finaliza el juego.
+        7.3) Fin CU alternativo.
+
+- Especificacion CU:
+    - Nombre: Publicar en muro FB
+    - Descripcion: Este CU implementa funcionalidad para permitirle al estudiante realizar una publicacion en su muro de Facebook dependiendo de su logro en la aplicacion.
+    - Actor primario: OpenLinguo.
+    - Actor secundario: Estudiante, Facebook.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando el estudiante termino de inscribirse a un idioma o gano un juego de idiomas.
+        2. Facebook le solicita al sistema que cargue una imagen por cada idioma en el que el estudiante en cuestion este inscripto, junto con la fecha de inscripcion, su nivel de progreso de aprendizaje y el mismo en relacion al promedio mundial.
+        3. OpenLinguo le entrega a Facebook la informacion solicitada.
+        4. Facebook realiza la publicacion en el muro del estudiante.
+        5. Fin CU.
