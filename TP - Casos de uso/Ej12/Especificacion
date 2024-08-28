@@ -1,0 +1,34 @@
+- Especificacion CU:
+    - Nombre: Cargar paciente.
+    - Descripcion: Este CU implementa funcionalidad para permitirle al responsable del hospital ingresar un paciente en el sistema.
+    - Actor primario: Paciente.
+    - Actor secundario: Responsable hospital, SIHC.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando un paciente ingresa al hospital provincial.
+        2. El sistema le pide al paciente su DNI.
+        3. El paciente informa su DNI al responsable.
+        4. El sistema verifica la historia clinica del cliente segun su DNI interactuando con el SIHC.
+        5. El sistema registra ingresa los datos de la historia clinica del paciente (nombre, apellido, direccion y fecha de nacimiento).
+        6. El responsable del hospital ingresa dia y horario del ingreso del paciente al hospital, la enfermedad que esta cursando el paciente y el tipo de cama que ocupa.
+        7. PtoExt.
+        8. Fin CU.
+
+    - Flujo alternativo (4.):  
+        4.1) El sistema comprueba con el SIHC que el paciente no tiene historia clinica.   
+        4.2) El sistema le solicita al cliente que ingrese su nombre, apellido, direccion y fecha de nacimiento.
+        4.3) El paciente ingresa los datos pedidos.
+        4.4) El sistema le envia los datos del paciente al SIHC para que cree su historia clinica.
+        4.5) Fin CU alternativo.        
+
+- Especificacion CU:
+    - Nombre: Cargar capacidad.
+    - Descripcion: Este CU implementa funcionalidad para permitirle al responsable del hospital cargar la capacidad del hospital.
+    - Actor primario: Responsable hospital.
+    - Actor secundario: 
+    - Trigger: "
+    - Flujo basico: 
+        1. Este CU comienza cuando se amplia el hospital o agregan nuevas camas y el responsable del hospital debe cargar la capacidad del hospital. 
+        2. El responsable del hospital debe indicar la cantidad de camas totales.
+        3. El responsable del hospital indica por cada cama su tipo (sala general, terapia intermedia o terapia intensiva).
+        4. Fin CU.
