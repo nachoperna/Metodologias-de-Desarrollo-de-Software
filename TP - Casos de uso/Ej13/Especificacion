@@ -1,0 +1,58 @@
+- Especificacion CU:
+	- Nombre: Agregar artista.
+	- Descripcion: Este CU implementa funcionalidad para permitirle al usuario agregar un arista nuevo a la plataforma.
+	- Actor primario: Usuario.
+	- Actor secundario:
+	- Trigger: "
+	- Flujo basico: 
+		1. Este CU comienza cuando el usuario quiere agregar un nuevo artista a la plataforma.
+		2. La plataforma le solicita al usuario el nombre y apellido del artista, nombre artístico (en caso de tenerlo), nacionalidad, y, opcionalmente, una o más fotos del mismo.
+		3. El usuario le brinda a la plataforma la informacion pedida.
+		4. La plataforma agrega al sistema el nuevo artista.
+		5. Fin CU.
+
+	- Caso de uso que extiende: extiende funcionalidad de Agregar album.
+
+- Especificacion CU:
+	- Nombre: Agregar album.
+	- Descripcion: Este CU implementa funcionalidad para permitirle al usuario agregar un nuevo album de musica a la plataforma.
+	- Actor primario: Usuario.
+	- Actor secundario:
+	- Trigger: "
+	- Flujo basico: 
+		1. El CU comienza cuando el usuario quiere agregar un nuevo album.
+		2. La plataforma le pide al usuario el nombre del álbum, año de edición, cantidad de canciones, una descripción, una imagen de la carátula del mismo, y deberá seleccionarse el artista al que pertenece.
+		3. El usuario brinda la informacion a la plataforma.
+		4. La plataforma verifica que el artista ingresado exista en el sistema.
+		5. PtoExt2 (Agregar cancion).
+		6. Fin CU.
+
+	- Flujo alternativo (4.):
+		4.1) El sistema comprueba que el artista ingresado por el usuario no existe en la plataforma.
+		4.2) La plataforma le pide al usuario que cargue al nuevo artista.
+		4.3) PtoExt.
+		4.4) Fin CU alternativo.
+
+- Especificacion CU:
+	- Nombre: Agregar cancion.
+	- Descripcion: Este CU implementa funcionalidad para permitirle al usuario agregar una nueva cancion en el sistema.
+	- Actor primario: Usuario.
+	- Actor secundario: 
+	- Trigger: "
+	- Flujo basico:
+		1. Este CU comienza cuando el usuario quiere agregar una nueva cancion al sistema.
+		2. La plataforma le pide al usuario que suba el archivo de audio de la cancion, junto con el nombre y opcionalmente la letra de la misma.
+		3. El usuario brinda esa informacion.
+		4. Opcionalmente La plataforma le pide al usuario que indique el nombre del album al que quiere agregar la cancion.
+		5. El usuario ingresa el nombre del album a agregar la cancion.
+		6. La plataforma verifica la existencia del album.
+		7. La plataforma agrega la cancion correctamente al sistema.
+		8. Fin CU.
+
+	- Flujo alternativo(6.):
+		6.1) El sistema comprueba que el album ingresado por el usuario no existe.
+		6.2) La plataforma le informa de la situacion al usuario.
+		6.3) Redirije a 8.
+		6.4) Fin CU alternativo.
+
+	- Caso de uso que extiende: extiende funcionalidad de Agregar album.
