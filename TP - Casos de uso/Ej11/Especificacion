@@ -1,0 +1,44 @@
+- Especificacion CU:
+    - Nombre: Ver calendario
+    - Descripcion: Este CU implementa funcionalidad para permitirle al usuario visualizar un calendario que muestra todas las reservas efectuadas por otros vecinos y los dias libres.
+    - Actor primario: Vecino.
+    - Actor secundario: -
+    - Trigger: "
+    - Flujo basico: 
+        1. Este CU comienza cuando el vecino quiere ver que herramientas estaban reservadas y por cuanto tiempo o que dias hay libres.
+        2. El sistema le muestra al vecino el calendario de herramientas.
+        3. PtoExt.
+        4. Fin CU.
+
+- Especificacion CU:
+    - Nombre: Reservar herramienta.
+    - Descripcion: Este CU implementa funcionalidad para permitirle a un vecino reservar una herramienta especifica para una fecha y horario determinado.
+    - Actor primario: Vecino.
+    - Actor secundario: Tiempo.
+    - Trigger: "
+    - Flujo basico:
+        1. Este CU comienza cuando un vecino quiere reservar una herramienta.
+        2. El sistema le pide al vecino que selecciona una herramienta de la lista.
+        3. El vecino selecciona una herramienta.
+        4. El sistema le pide al vecino que ingrese un dia, horario de comienzo y fin del prestamo.
+        5. El vecino brinda la informacion.
+        6. El sistema verifica que la herramienta se encuentra disponible en esa fecha y horario pedido.
+        7. El sistema le pide al vecino su nombre, apellido, email y dirección.
+        8. El vecino brinda la informacion.
+        9. El sistema verifica que el prestamo se realiza con un minimo de 12 horas de anticipacion.
+        10. El sistema registra la solicitud.
+        11. Fin CU.
+
+    - Flujo alternativo (6.):
+        6.1) El sistema comprueba que la herramienta no se encuentra disponible en la fecha y horario ingresado por el vecino.
+        6.2) El sistema informa de la situacion al vecino.
+        6.3) Redirije a 4.
+        6.4) Fin CU alternativo.
+
+    - Flujo alternativo (9.):
+        9.1) El sistema comprueba que el prestamo se esta realizando con menos de 12 horas de anticipacion al comienzo del prestamo.
+        9.2) El sistema informa de la situacion.
+        9.3) Redirije a 4.
+        9.4) Fin CU alternativo.
+
+    - Caso de uso que extiende: Reservar herramienta extiende al caso de uso Ver calenario cuando un vecino quiere reservar una herramienta mientras visualiza el calendario.
