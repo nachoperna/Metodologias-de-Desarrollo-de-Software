@@ -1,0 +1,9 @@
+1. El sombrero seleccionador no es un actor en el diagrama porque esta jubilado y no debe intervenir en ningun proceso.
+
+2. Asignar casa solo debe ser un caso de uso relacionado con el proceso de eleccion de casa.
+
+3. Al completar el formulario de registro se le asigna al estudiante una varita, no una casa.
+
+4. La relacion de extension entre "Elegir casa" y "Completa formulario de registro" deberia ser inversa, porque el CU "Completar formulario" ayuda al CU "Elegir casa" si el estudiante no se encuentra registrado en ese momento.
+
+5. Se puede abstraer el proceso de resolver un cuestionario entre ambos casos de uso del diagrama.

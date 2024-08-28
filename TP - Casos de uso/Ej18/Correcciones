@@ -1,0 +1,3 @@
+1. Un actor del diagrama no debe tener nombres propios por lo que el actor Nacho deberia llamarse "Responsable"
+
+2. No hay relacion alguna entre casos de uso "Reportar herramienta faltante" y "Generar codigo" por lo que ninguno necesita prestarle comportamiento al otro. En este caso la relacion de extension no deberia existir.
