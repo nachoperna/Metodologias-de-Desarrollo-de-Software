@@ -1,49 +1,60 @@
 Jefe de impresion
+	
+	UA: Trabajar 
 
-	[Imprimir billetes]
-		US1:
-			- Como Jefe de impresion quiero poder imprimir billetes para conservar mi laburo.
-			- Criterios de aceptacion:
-				- Verificar que se indique el modelo del billete a imprimir.
-				- Verificar que se indique la cantidad total de billetes a imprimir.
-				- Verificar que se indique solo UN modelo de billete.
-				- Dar aviso al Banco Central Europeo.
-				- Enviar a imprimir el dinero con la impresora industrial a través de su API.
-				- Abrir boveda (Ver US2)
-				- Guardar hora de inicio, hora de fin, cantidad y modelo de billetes impresos.
+		UT: Imprimir billetes
+			US1:
+				- Como Jefe de impresion quiero poder imprimir billetes para conservar mi laburo.
+				- Criterios de aceptacion:
+					- Verificar que se indique el modelo del billete a imprimir.
+					- Verificar que se indique la cantidad total de billetes a imprimir.
+					- Verificar que se indique solo UN modelo de billete.
+					- Dar aviso al Banco Central Europeo.
+					- Enviar a imprimir el dinero con la impresora industrial a través de su API.
+					- Abrir boveda (Ver US2)
+					- Guardar hora de inicio, hora de fin, cantidad y modelo de billetes impresos.
 
-	[Abrir boveda]
-		US2:
-			- Como sistema quiero poder abrir la boveda para el ingreso/retiro de billetes.
-			- Criterios de aceptacion:
-				- Enviar SMS al director de la fabrica pidiendo autorizacion.
-				- Pedir autorizacion al Banco Central Europeo.
-				- Verificar el codigo de 5 digitos numericos en el SMS recibido del director de la fabrica.
-				- Verificar los 16 digitos alfanumericos recibidos de parte del BCE.
+			US2:
+				- Como jefe de impresion quiero poder activar la apaertura de la boveda para el ingreso de los billetes impresos.
+				- Criterios de aceptacion:
+					- Enviar SMS al director de la fabrica pidiendo autorizacion.
+					- Pedir autorizacion al Banco Central Europeo.
+					- Verificar el codigo de 5 digitos numericos en el SMS recibido del director de la fabrica.
+					- Verificar los 16 digitos alfanumericos recibidos de parte del BCE.
 
-	[Diseñar billete]
-		US3:
-			- Como Jefe de impresion quiero poder diseñar un billete para conmemorar un evento historico.
-			- Criterio de aceptacion:
-				- Verificar que se brinde ancho y alto del billete.
-				- Verificar que se brinde denominacion del billete.
-				- Verificar que se carguen 2 imagenes en formato eps con el diseño del frente y dorso del billete.
-				- Verificar que el jefe de impresion elija la opcion imprimir los billetes al terminar (Ver US1).
+		UT: Diseñar billete
+			US3:
+				- Como Jefe de impresion quiero poder diseñar un billete para conmemorar un evento historico.
+				- Criterio de aceptacion:
+					- Verificar que se brinde ancho y alto del billete.
+					- Verificar que se brinde denominacion del billete.
+					- Verificar que se carguen 2 imagenes en formato eps con el diseño del frente y dorso del billete.
+					- Verificar que el jefe de impresion elija la opcion imprimir los billetes al terminar (Ver US1).
 
 Secretaria de fabrica nacional de moneda y timbre de Madrid.
 
-	[Retirar dinero]
-		US4:
-			- Como secretaria de la fabrica quiero poder registrar informacion de operaciones de retiro de dinero para seguridad de la fabrica.
-			- Criterios de aceptacion:
-				- Verificar que se registre la cantidad de billetes de cada denominacion retirados.
-				- Verificar que se registre la patente del camion de caudales.
-				- Verificar que se registre informacion del banco destino.
-				- Verificar que se abra la boveda para permitir el retiro del dinero (Ver US2).
+	UA: Controlar
 
-	[Detallar stock]
-		US5:
-			- Como secretaria de la fabrica quiero poder controlar el stock de los materiales de los billetes para que la fabrica continue imprimiendo.
-			- Criterios de aceptacion:
-				- Verificar la cantidad actual de cada material para imprimir.
-				- Verificar que se actualice la cantidad remanente de cada insumo al ingresar nuevos.
+		UT: Retirar dinero
+			US4:
+				- Como secretaria de la fabrica quiero poder registrar informacion de operaciones de retiro de dinero para seguridad de la fabrica.
+				- Criterios de aceptacion:
+					- Verificar que se registre la cantidad de billetes de cada denominacion retirados.
+					- Verificar que se registre la patente del camion de caudales.
+					- Verificar que se registre informacion del banco destino.
+					- Verificar que se abra la boveda para permitir el retiro del dinero (Ver US2).
+
+			US5:
+				- Como secretaria de la fabrica quiero poder activar la apaertura de la boveda para el retiro de los billetes solicitados.
+				- Criterios de aceptacion:
+					- Enviar SMS al director de la fabrica pidiendo autorizacion.
+					- Pedir autorizacion al Banco Central Europeo.
+					- Verificar el codigo de 5 digitos numericos en el SMS recibido del director de la fabrica.
+					- Verificar los 16 digitos alfanumericos recibidos de parte del BCE.
+
+		UT: Detallar stock
+			US6:
+				- Como secretaria de la fabrica quiero poder controlar el stock de los materiales de los billetes para que la fabrica continue imprimiendo.
+				- Criterios de aceptacion:
+					- Verificar la cantidad actual de cada material para imprimir.
+					- Verificar que se actualice la cantidad remanente de cada insumo al ingresar nuevos.
