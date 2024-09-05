@@ -1,0 +1,70 @@
+Deportista
+
+	UA: Interactuar con el club.
+
+		UT: Reservar cancha
+
+			US1:
+				- Como deportista quiero poder reservar una cancha en el club para jugar.
+				- Criterios de aceptacion:
+					- Verificar que se le pida al usuario el tipo de cancha, dia y horario en el que desea reservar.
+					- Verificar que el usuario ingrese los datos pedidos.
+					- Verificar que haya disponibilidad de cancha en dia y horario ingresado por el usuario.
+					- Verificar que se de aviso al usuario sobre el error en el caso de no encontrar disponibilidad de cancha.
+					- Verificar que se informe datos de pago (Ver US2)
+					- Verificar que se muestre informacion del turno asignado en caso de encontrar disponibilidad (dia, hora, caracteristicas de cancha (deporte, ubicacion en el predio, cantidad de deportista, duracion del turno))
+
+			US2: 
+				- Como deportista quiero poder informar datos de bancarios para poder pagar la cancha reservada.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese informacion del responsable de pago (nombre, apellido, dni).
+					- Verificar que el usuario ingrese datos de tarjeta de credito (numero de tarjeta, fecha de vencimiento, codigo de seguridad)
+					- Verificar que se valide la informacion del pago con el sistema bancario correspondiente.
+					- Verificar que se muestre al usuario el turno y monto a pagar en caso de que la validacion bancaria sea correcta.
+
+			US3:
+				- Como deportista quiero poder visualizar un calendario del club para ver turnos libres.
+				- Criterios de aceptacion:
+					- Verificar que se le muestre al usuario un calendario de los proximos 7 dias del club.
+					- Verificar que se detallen en el calendario los turnos libres por cada cancha de cada deporte.
+					- Verificar que el usuario pueda reservar una cancha en un dia elegido (Ver US1).
+
+		UT: Cancelar reserva
+			US4:
+				- Como deportista quiero poder cancelar una reserva para dejar el turno disponible.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese los datos de la reserva que quiere cancelar.
+					- Verificar que los datos sean correctos.
+					- Verificar que la hora de cancelacion sea 12 horas antes de la hora de inicio de turno.
+					- Verificar que se actualice la disponibilidad de canchas del club.
+					- Verificar que se le cobre al usuario la penalizacion por cancelar el turno (Ver US5)
+
+			US5:
+				- Como deportista quiero poder pagar la penalizacion por cancelar el turno para cumplir con las reglas del club.
+				- Criterios de aceptacion:
+					- Verificar si el usuario asistió al turno 
+					- Verificar que se cobre al usuario el 10% del monto del turno si no lo cancelo, interactuando con el sistema bancario.
+					- Verificar que se cobra el usuario el 50% del monto del turno si no cancelo el turno y no se asistio al club, interactuando con el sistema bancario.
+					- Verificar que se cobre al usuario el monto determinado si asistio al turno, apenas finalice, interactuando con el sistema bancario.
+
+	UA: Informarme
+
+		UT: Controlar
+			US6:
+				- Como deportista quiero poder recibir ofertas de las canchas nuevas en el club para poder usarlas.
+				- Criterios de aceptacion:
+					- Verificar que se haya terminado de construir una cancha en el club.
+					- Verificar que se le ofrezca al usuario la informacion de la cancha construida (deporte, ubicacion en el predio, cantidad de deportistas, dias, horarios, duracion del turno).
+					- Verificar que se le ofrezca al usuario la posibilidad de reservar la cancha construida (Ver US1).
+
+			US7:
+				- Como deportista quiero poder ver las caracteristicas de una cancha para informarme.
+				- Criterios de aceptacion:
+					- Verificar qué cancha especifica el usuario quiere ver informacion.
+					- Verificar que se muestre la informacion de la cancha seleccionada por el usuario (deporte, ubicacion, cantidad de jugadores, dias, horarios y duracion del turno).
+
+			US8:
+				- Como deportista quiero poder ver un informe de la ocupacion de canchas para estar informado.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese un dia y horario determinado.
+					- Verificar que se le muestre al usuario un listado de canchas disponibles y ocupadas en el dia y horario ingresado.
