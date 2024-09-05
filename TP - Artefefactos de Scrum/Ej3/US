@@ -1,0 +1,63 @@
+Fan
+
+	UA: Ver informacion de la serie
+		
+		[Consultar resumen]
+			US1:
+				- Como Fan de la serie quiero poder consultar resumenes de los capitulos para manterme informado.
+				- Criterios de aceptacion:
+					- Verificar qué capitulo elije el usuario para ver su resumen.
+					- Verificar que se muestre el nombre, sinopsis, fotos y videos del capitulo cargados en la aplicacion.
+					- Verificar que se muestre la lista de personajes que pertenecen al capitulo.
+					- Verificar si el usuario quiere acceder a informacion detallada de un personaje (Ver US3).
+
+		[Ver perfil de personaje]
+			US3:
+				- Como fan quiero poder consultar informacion detallada de un personaje para conocerlo mejor.
+				- Criterios de aceptacion:
+					- Verificar que personaje quiere consultar el usuario.
+					- Verificar que se brinde la biografia, nombre, fotos y escudo de la casa a la que pertenece el personaje.
+					- Verificar que se listen todos los capitulos en los que aparece el personaje.
+
+		UT: Ver informacion de casa
+
+			US4:
+				- Como fan quiero poder consultar la informacion de una casa para conocerla mejor.
+				- Criterios de aceptacion:
+					- Verificar que el fan ingrese de qué casa quiero ver informacion.
+					- Verificar que se muestre el nombre, historia, escudo con su descripcion y lema de la casa elegida.
+					- Verificar que se muestre un arbol genealogico de la casa (Ver US5)
+
+			US5: 
+				- Como fan quiero poder ver el arbol genealogico de una casa para conocer a los personajes que pertenecen a ella.
+				- Criterios de aceptacion:
+					- Verificar de qué casa quiere ver el arbol genealogico el usuario.
+					- Verificar que se muestre el arbol genealogico de la lista de personajes pertenecientes a la casa.
+					- Verificar si el usuario quiere ver informacion detallada de algun personaje especifico (Ver US3).
+
+
+		User Task: Ver mapa de la serie
+				US7: 
+					- Como fan quiero poder visualizar un mapa de la serie para conocer donde transcurre la historia.
+					- Criterios de aceptacion:
+						- Verificar que se muestre las regiones donde transcurre la historia de la serie.
+						- Verificar que se indiquen las principales ciudades de cada region.
+						- Verificar que haya un detalle breve de las ciudades y los nombres de los capitulos en los que aparece la ciudad.
+
+	UA: Hacer otras cosas
+
+		UT: Recibir alerta
+				US6:
+					- Como fan quiero poder recibir alertas de un capitulo para no perderme verlo.
+					- Criterios de aceptacion:
+						- Verificar que se le pida al usuario el email y numero de telefono movil.
+						- Verificar el horario de estreno del capitulo nuevo.
+						- Verificar que se le envie a la informacion accedida por el usuario un aviso 1 hora antes de la emision del capitulo.
+
+		UT: Hacer trivia
+				US8:
+					- Como fan quiero poder realizar una trivia de la serie para conocer a que casa pertenezco.
+					- Criterios de aceptacion:
+						- Verificar que se brinda al usuario la serie de preguntas correspondientes.
+						- Verificar que se analice el resultado de las preguntas del usuario.
+						- Verificar que se otorgue como resultado una casa dependiendo el analisis de las respuestas.
