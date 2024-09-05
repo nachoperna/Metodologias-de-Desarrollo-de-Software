@@ -1,0 +1,63 @@
+Usuario
+	
+	UA: Registrarse/Ingresarse
+
+		UT: Crear cuenta
+
+			US1:
+				- Como usuario quiero poder crear una cuenta en el sistema para ver series.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese su nombre, telefono, email, edad, preferencias de series y cuenta de Facebook.
+					- Verificar que se valida la cuenta de Facebook del usuario (Ver US5).
+					- Verificar que el usuario tenga la opcion de suscribirse a una serie si la validacion fue exitosa (Ver US2).
+
+			US2: 
+				- Como usuario quiero poder suscribirme a una serie para estar notificado sobre nuevos capitulos.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese el nombre de la serie.
+					- Verificar que el usuario elija sobre que ser notificado (nuevo capitulo, nueva temporada, nuevo capitulo de serie relacionada).
+					- Verificar que el usuario ingrese en que idioma desea recibir notificaciones (ingles o español).
+					- Verificar que se alerte a los demas usuarios de la plataforma sobre la informacion de suscripcion del usuario actual.
+
+	UA: Usar servicio
+
+		UT: Consumir series
+
+			US3:
+				- Como usuario quiero poder ver una serie para mirarla.
+				- Criterios de aceptacion:
+					- Verificar que el usuario este registrado en el sistema.
+					- Verificar que el usuario se registre si no lo esta (Ver US1)
+					- Verificar que el usuario elija la serie, numero de temporada y numero de capitulo.
+					- Verificar que el usuario este suscrito a la serie que eligio.
+					- Verificar que el usuario sea notificado si no esta suscrito.
+					- Verificar que se recomiende la actividad en Facebook (Ver Us6)
+
+			US4:
+				- Como usuario quiero poder buscar una serie para verla o leer informacion de la misma.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese el nombre de un actor o actriz, nombre de un personaje o nombre de serie.
+					- Verificar que se muestre el nombre de la serie, los actores que participaron en ella, un resumen de los capitulos, fotos de los personajes y series relacionadas.
+					- Verificar que se le permita al usuario realizar otra busqueda si no hubo resultados.
+					- Verificar que se le permita al usuario suscribirse a la serie que busco (Ver US2).
+					- Verificar que el usuario tenga la posibilidad de recomendar su busqueda en Facebook si lo desea (Ver US6).
+
+Facebook
+
+	UA: Promocionar servicio de streaming
+
+		UT: Vincular usuario/s
+
+			US5:
+				- Como Facebook quiero poder validar la cuenta de un usuario para que pueda registrarse en la plataforma.
+				- Criterios de aceptacion:
+					- Verificar que el usuario ingrese su cuenta de Facebook.
+					- Verificar que la cuenta este registrada en el sistema.
+					- Verificar que se le notifique a la plataforma de streaming que la validacion fue exitosa o erronea.
+
+			US6: 
+				- Como Facebook quiero que el usuario pueda recomendar una actividad de la plataforma de streaming para compartirla con sus amigos.
+				- Criterios de aceptacion:
+					- Verificar que el usuario elija la audiencia de la publicacion (post publico, mensaje privado a un amigo, post en el muro de un amigo).
+					- Verificar que el usuario elija una foto o videeo representativo de la actividad.
+					- Verificar que se realice la publicacion correctamente.
