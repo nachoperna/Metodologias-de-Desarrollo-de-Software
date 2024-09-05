@@ -1,0 +1,62 @@
+Usuario
+
+	UA: Informarse sobre el mundial 
+
+		UT: Ver lista de jugadores
+			US1:
+				- Como usuario quiero poder ver la listas de todos los jugadores de una seccion especifica para conocerlos.
+				- Criterios de aceptacion:
+					- Verificar desde que seccion de la aplicacion el usuario quiere ver un listado de jugadores.
+					- Verificar que se le muestre al usuario ese listado de jugadores.
+					- Verificar que se muestre el perfil de cada jugador (Ver US2).
+
+			US2: 
+				- Como usuario quiero poder ver el perfil de un jugador especifico para conocerlo.
+				- Criterios de aceptacion:
+					- Verificar que se le muestre al usuario la foto, posicion, biografia y estadisticas del jugador mostrado.
+
+		UT: Ver equipos
+			US3:
+				- Como usuario quiero poder ver los equipos que participan en el mundial para informarme.
+				- Criterios de aceptacion:
+					- Verificar que se muestre al usuario un listado de todos los equipos que partcipan en el mundial.
+					- Verificar que por cada equipo en el listado se muestre su nombre, un resumen de la historia de participaciones del pais en la Copa.
+					- Verificar que se muestre el listado de jugadores de cada equipo convocados para el mundial (Ver US1).
+					- Verificar si el usuario quiere ser notificado sobre algun partido (Ver US7).
+
+			US4:
+				- Como usuario quiero poder ver los grupos del mundial para informarme.
+				- Criterios de aceptacion:
+					- Verificar que se muestre un listado de todos los grupos del mundial.
+					- Verificar que se muestre por cada equipo en los grupos, la cantidad de puntos conseguidos hasta el momento (Ver US5).
+					- Verificar si el usuario quiere ser notificado sobre algun partido (Ver US7).
+
+			US5:
+				- Como usuario quiero poder conocer los puntos que tiene un equipo en el mundial para informarme.
+				- Criterios de aceptacion:
+					- Verificar que hayan transcurrido 30 minutos desde la ultima consulta al sistema de la FIFA.
+					- Verificar que se interactue con el sistema "MatchesScores" de la FIFA para corroborar el resultado de un partido finalizado.
+					- Verificar que se le otorgue a los equipos los puntos correspondientes en la seccion de grupos (3 puntos al ganador del partido, 1 punto para cada equipo si hay empate).
+
+		UT: Ver calendario
+		
+			US6:
+				- Como usuario quiero poder ver un calendario de partido del mundial para informarme.
+				- Criterios de aceptacion:
+					- Verificar que se muestre en orden cronologico todos los partidos del mundial.
+					- Verificar que por cada partido se muestre la hora, estadio y ciudad donde se desarrolla.
+					- Verificar que se indique el resultado del partido (Ver US5).
+					- Verificar si el usuario quiere ser notificado sobre algun partido (Ver US7).
+
+		UT: Estar alerta
+
+			US7:
+				- Como usuario quiero poder ser notificado sobre el resultado de un partido para informarme.
+				- Criterios de aceptacion:
+					- Verificar la finalizacion de los encuentros con el sistema de la FIFA (Ver US5).
+					- Verificar que se notifique al usuario sobre el resultado del partido.
+
+			US8:
+				- Como usuario quiero poder ver las noticias relacionadas al mundial para mantenerme informado,
+				- Criterios de aceptacion:
+					- Verificar que se le muestre al usuario todas las noticias que se publiquen en el sitio web de "La Pulga".
