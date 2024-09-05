@@ -1,0 +1,54 @@
+Ciudadano
+	
+	UA: Reportar
+
+		UT: Denunciar
+			US1:
+				- Como ciudadano quiero poder reportar un lugar de la ciudad en el que encuentre basura para que la cuadrilla pueda limpiar.
+				- Criterios de aceptacion:
+					- Verificar que el ciudadano ingrese sus datos personales (nombre, apellido, dni).
+					- Verificar que se muestre un mapa de la ciudad donde el usuario marque la lozalizacion exacta del lugar a reportar.
+					- Verificar que el usuario suba una foto del lugar.
+					- Verificar si el usuario quiere opcionalmente aportar una descripcion de la situacion.
+					- Verificar que el ciudadano reciba un numero de denuncia.
+					- Verificar que se agregue la localizacion marcada por el ciudadano al mapa de la ciudad.
+
+			US2:
+				- Como ciudadano quiero poder denunciar a una persona que esta tirando basura para que vayan a recogerla.
+				- Criterios de aceptacion:
+					- Verificar que el ciudadano ingrese sus datos personales (nombre, apellido, dni).
+					- Verificar que se muestre un mapa de la ciudad donde el usuario marque la lozalizacion exacta del lugar a reportar.
+					- Verificar que el ciudadano aporte un video del suceso junto con la fecha y hora del mismo.
+					- Verificar que se envie la denuncia al Juez de faltas.
+					- Verificar que el ciudadano reciba un numero de denuncia.
+					- Verificar que se agregue la localizacion marcada por el ciudadano al mapa de la ciudad.
+
+Jefe de cuadrilla
+
+	UA: Recolectar basura
+
+		UT: Resolver denuncia
+			
+			US3:
+				- Como jefe de cuadrilla quiero poder marcar una denuncia como resuelta para conservar mi laburo.
+				- Criterios de aceptacion:
+					- Verificar que el jefe de cuadrilla informe el numero de denuncia, dia y horario y foto del lugar donde recolecto basura.
+					- verificar que se notifique al ciudadano que genero el reporte segun el numero de denuncia.
+
+			US4:
+				- Como jefe de cuadrilla quiero poder ver un mapa de la ciudad para encontrar los lugares sucios.
+				- Criterios de aceptacion:
+					- Verificar que se muestre un mapa de toda la ciudad con los puntos sucios.
+					- Verificar si el jefe de cuadrilla quiere marcar en el mapa una denuncia como resuelta (Ver US3).
+
+Subsecretario de medio ambiente
+
+	UA: Controlar ciudad
+
+		UT: Ver estadisticas
+
+			US5:
+				- Como subsecretario de medio ambiente quiero ver poder ver estadisticas de recoleccion de basura para controlar el trabajo de mis empledaos.
+				- Criterios de aceptacion:
+					- Verificar que se generen y muestren estadisticas del ultimo mes calendario sobre reportes generados y resoluciones de la cuadrilla.
+					- Verificar que se actualicen y generen las estadisticas el primer dia de cada mes.
