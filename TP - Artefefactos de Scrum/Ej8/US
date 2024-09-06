@@ -1,0 +1,83 @@
+Usuario
+
+	UA: Usar aplicacion
+
+		UT: Registrar
+
+			US1:
+				- Como usuario quiero crear una cuenta para realizar pagos con tarjeta de credito usando mi telefono movil.
+				- Criterios de aceptacion:
+					- El usuario debe ingresar su nombre, apellido, direccion residencial y DNI.
+					- El usuario debe ingresar su correo electronico.
+					- El usuario debe ingresar una clave de seguridad de al menos 10 caracteres.
+					- El usuario debe registrar su huella digital en el lector biometrico del dispositivo.
+					- Verificar que se registre correctamente su cuenta en el sistema.
+					- El usuario debe incorporar una tarjeta de credito (Ver US2).
+
+			US2:
+				- Como usuario quiero poder registrar una tarjeta de credito en el sistema para utilizarle como medio de pago en mi movil.
+				- Criterios de aceptacion:
+					- Verificar que el usuario posea 4 o menos tarjetas de credito registradas.
+					- El usuario debe ingresar el numero de la tarjeta que quiere registrar, el banco que la emitió, fecha de emision, fecha de vencimiento, y codigo de seguridad de tres dígitos.
+					- Se debe interactuar con el sistema bancario para la validacion de la tarjeta agregada.
+					- Se debe ofrecer al usuario la posibilidad de repetir el proceso para agregar una tarjeta nueva.
+
+		UT: Comprar
+
+			US3:
+				- Como usuario quiero poder realizar el pago de una compra en un comercio fisico con mi telefono para usar la aplicacion.
+				- Criterios de aceptacion:
+					- Verificar que el usuario acerque su telefono movil a un POSNet NFC de un comercio habilitado.
+					- Extraer monto de la transaccion.
+					- Extraer informacion del comercio del POSNet.
+					- Verificar que el POSNet no sea apócrifo.
+					- El usuario deberá autorizar el pago de la compra (Ver US4).
+					- Si la autorizacion fue exitosa, se registra la compra.
+
+			US4:
+				- Como usuario quiero poder autorizar el pago de una compra para seguir con mi vida.
+				- Criterios de aceptacion:
+					- Verificar que el usuario apoye una huella digital en el lector biometrico del dispositivo.
+					- Recuperar el patron único de la huella.
+					- Comprobar que el patron recuperado coincida con el registrado en el sistema dentro de la cuenta del usuario.
+					- Si los patrones coinciden, autorizar el pago interactuando con el sistema bancario.
+					- Si los patrones no coinciden, ofrecer la posbilidad al usuario de que vuelva a ingresar su huella digital.
+					- Verificar si el usuario ingreso 3 veces erroneamente su huella digital.
+					- Si el usuario ingreso erroneamente 3 veces su huella digital, desactivar sus tarjetas de credito asociadas para pagos futuros.
+
+			US5:
+				- Como usuario quiero poder realizar el pago de una compra en un comercio online con mi telefono para usar la aplicacion.
+				- Criterios de aceptacion:
+					- Al momento de pagar una operacion, verificar que se muestre una ventana popup donde el usuario realice todo el proceso.
+					- Capturar los datos de la transaccion del comercio online vinculante (monto de compra y detalles del comercio).
+					- El usuario podrá seleccionar la tarjeta con la que pagará.
+					- Proveer la opcion de que el usuario pueda agregar una nueva tarjeta en el momento si lo desea (Ver US2).
+					- El usuario deberá autorizar el pago (Ver US4).
+					- SI la autorización fue exitosa, se registra la compra.
+
+		UT: Informarme
+
+			US6:
+				- Como usuario quiero leer un resumen de mis transaccion durante el mes para revisar mis movimientos.
+				- Criterios de aceptacion:
+					- Verificar que el dia actual sea el último del mes actual.
+					- Construir un resumen de las transacciones del usuario en todo el mes actual (cada una de las transacciones ordenadas por su fecha, indicando el comercio donde fue realizada y su dirección, el monto pagado, y en el caso que lo hubiese, el descuento aplicado al pagar).
+					- Enviar el resumen realizado al correo electrónico asociado a la cuenta de cada usuario.
+
+			US8:
+				- Como usuario quiero poder ver las tiendas cercanas que admiten pagos electrónicos con telefono para acudir a ellas.
+				- Criterios de aceptacion:
+					- Capturar la ubicacion exacta del usuario usando los sensores de geolocalizacion de su telefono.
+					- Mostrar al usuario un mapa de la ciudad con los comercios habilitados cercanos a él segun la ubicacion capturada.
+					- Capturar la ubicacion del comercio elegido por el usuario.
+					- Calcular y mostrar por pantalla la ruta mas rápida desde la ubicacion actual del usuario hasta el comercio.
+
+		UT: Cancelar servicio
+
+			US7:
+				- Como usuario quiero poder desactivar el servicio de pagos electrónicos por razones de seguridad.
+				- Criterios de aceptacion:
+					- Proveer al usuario una página web especial.
+					- El usuario deberá acceder a esa pagina web mediante su correo electrónico y clave de seguridad.
+					- Comprobar que los datos ingresados por el usuario sean validos.
+					- Si los datos son validos, desactivar el uso de sus tarjetas de credito asociadas en la aplicacion.
