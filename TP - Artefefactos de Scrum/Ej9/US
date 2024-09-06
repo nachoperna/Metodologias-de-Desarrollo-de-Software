@@ -1,0 +1,47 @@
+Usuario
+	
+	UA: Usar aplicacion
+
+		UT: Agregar informacion
+
+			US1:
+				- Como usuario quiero poder agregar un calendario externo a mi agenda para mantenerme organizado.
+				- Criterios de aceptacion:
+					- El usuario debe informar el nombre del calendario, una breve descripcion, direccion de email y contraseña que permita acceder al calendario.
+					- Verificar la conexion con el sistema de gestion de calendarios mediante el email y contraseña ingresado por el usuario.
+					- Importar eventos del calendario especificado hacia la agenda.
+
+			US2:
+				- Como usuario quiero poder agregar un nuevo evento a un calendario especifico para mantenerme organizado.
+				- Criterios de aceptacion:
+					- El usuario deberá informar el calendario, titulo del evento, dia y horario en el que se realizara.
+					- Proveer opcionalmente la funcionalidad para que el usuario agregue si lo desea, el lugar del evento y una lista de participantes (nombres y apellidos).
+					- Verificar si el nuevo evento se solapa con alguno ya existente mediante la gestion de calendarios.
+					- Informar al usuario si el evento se solapa con otro existente.
+					- Agregar el nuevo evento al calendario.
+					- Informar al calendario externo sobre el nuevo evento agregado mediante la gestion de calendarios.
+
+			US3:
+				- Como usuario quiero poder crear grupos de calendarios para mantenerme organizado.
+				- Criterios de aceptacion:
+					- Listar todos los calendarios de la agenda del usuario.
+					- Proveer la opcion de que el usuario pueda seleccionar calendarios simultaneamente.
+					- Proveer la opcion de agrupar los calendarios seleccionados.
+					- El usuario deberá informar nombre del grupo a crear.
+					- Proveer la opcion de agregar un nuevo calendario al momento de agrupar (Ver US1).
+
+		UT: Informarme
+
+			US4:
+				- Como usuario quiero poder visualizar todos los eventos que tengo en mis calendarios para mantenerme organizado.
+				- Criterios de aceptacion:
+					- Proveer al usuario una lista de todos los eventos de todos sus calendarios asociados.
+					- Proveer al usuario la opcion de filtrar eventos por calendario o rango de tiempo.
+					- Proveer al usuario la opcion de crear un nuevo evento al visualizar un dia en particular (Ver US2).
+
+			US5:
+				- Como usuario quiero poder recibir alertas sobre eventos proximos para mantenerme al tanto.
+				- Criterios de aceptacion:
+					- Corroborar el sistema de gestion de calendarios para encontrar los eventos proximos.
+					- Verificar que el evento comienza en 10 minutos a partir de ahora.
+					- Notificar al usuario sobre el evento proximo informando titulo del evento y el tiempo restante hacia el comienzo.
