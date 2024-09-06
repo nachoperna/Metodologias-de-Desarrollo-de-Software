@@ -1,0 +1,71 @@
+Estudiante
+
+	UA: Aprender
+
+		UT: Registrarme
+
+			US1:
+				- Como estudiante quiero poder registrarme en el sistema para usar la aplicacion.
+				- Criterios de aceptacion:
+					- El estudiante debera ingresar su nombre, apellido, direccion de email, edad, idioma nativo y marcar si cuenta con certificacion de otro idioma.
+					- El estudiante debe informar su informacion de logueo de Facebook.
+					- Validar la informacion de logueo de Facebook.
+					- Informar al estudiante si la validacion fue incorrecta y terminar el proceso.
+					- Si la validacion es correcta, el estudiante debera cargar un fotografia tipo carnet.
+					- Brindar la opcion al estudiante de inscribirse a un idioam (Ver US2).
+
+			US2:
+				- Como estudiante quiero poder inscribirme a un idioma para aprender.
+				- Criterios de aceptacion:
+					- El estudiante debe elgir el idioma a inscribirse.
+					- El estudiante debe informar su nivel de conocimiento (basico, intermedio, avanzado).
+					- Verificar si el estudiante cuenta con una certificacion en el idioma seleccionado.
+					- Verificar que el nivel seleccionado sea mayor o igual al nivel otorgado por el certificado.
+					- Proveer la opcion de realizar un test de nivel si el estudiante lo requiere.
+					- Realizar publicacion en muro de Facebook (Ver US4).
+
+		UT: Estudiar
+
+			US3:
+				- Como usuario quiero poder jugar un idioma para probar mis conocimientos.
+				- Criterios de aceptacion:
+					- Verificar que el estudiante este inscripto en el idioma que desea jugar para continuar.
+					- El estudiante debera comenzar el test de preguntas gramaticales.
+					- Verificar que se reste una estrella por respuesta incorrecta del estudiante.
+					- Verificar el tiempo de resolucion (5 minutos maximo = juego perdido)
+					- Verificar la cantidad de estrellas perdidas por el estudiante (3 estrellas perdidas = juego perdido)
+					- Verificar que el estudiante haya completado todos los ejercicios gramaticales con menos de 3 respuestas incorrectas y antes del tiempo limite.
+					- Realizar publicacion en muro de Facebook (Ver US4).
+
+			US5:
+				- Como estudiante quiero poder tomar clases online para aprender mejor.
+				- Criterios de aceptacion:
+					- El estudiante debera aportar informacion sobre una tarjeta de credito.
+					- Validar la informacion de la tarjeta con el sistema bancario.
+					- Validar la verificacion del pago.
+					- Conectar al estudiante con el profesor online, si los pasos anteriores fueron correctos.
+
+	UA: Ayudar
+
+		UT: Aportar a la comunidad
+		
+			US4:
+				- Como estudiante quiero realizar una publicacion en mi muro de Facebook para compartir mi progreso.
+				- Criterios de aceptacion:
+					- Verificar en que idiomas esta inscripto el estudiante.
+					- Cargar en Facebook una imagen por cada idioma que el estudiante este inscripto.
+					- Cargar en Facebook la fecha de inscripcion de cada idioma, junto con el nive de progreso y una relacion del progreso con el promedio mundial.
+					- Verificar que la publicacion se realice correctamente.
+
+
+			US6:
+				- Como estudiante quiero elaborar ejercicios para ayudar a la comunidad.
+				- Criterios de aeptacion:
+					- El estudiante debera elegir en que idioma quiere colaborar.
+					- Verificar que el estudiante tenga un determinado nivel certificado en ese idioma.
+					- Brindar al estudiante la opcion de realizar colaboraciones.
+					- Asignar un traductor profesional a las colaboraciones hechas por el estudiante.
+					- Notificar al estudiante cuando se asigne un traductor.
+					- Verificar que el traductor realice una revision sobre las colaboraciones del estudiante.
+					- Notificar via email al estudiante en caso de que el traductor profesional haya aprobado las colaboraciones.
+					- Publicar las colaboraciones en el sistema.
