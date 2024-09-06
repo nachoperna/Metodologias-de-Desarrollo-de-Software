@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Página-1" id="qU_fhuKpSnrCApZTvoVI">
+    <mxGraphModel dx="1114" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-1" value="&lt;h1&gt;Responsable local&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-2" value="&lt;h1&gt;Responsable IT&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="270" y="160" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-3" value="&lt;h1&gt;Ministerio de Salud&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-4" value="&lt;h1&gt;Trabajar&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="10" y="250" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-5" value="&lt;h1&gt;Trabajar&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="270" y="250" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-6" value="&lt;h1&gt;Administrar&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="520" y="250" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-7" value="&lt;h1&gt;Ingresar paciente&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="10" y="340" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-8" value="&lt;h1&gt;Agregar hospital&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="270" y="340" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-9" value="&lt;h1&gt;Controlar&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="520" y="340" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-10" value="&lt;h1&gt;US1&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="85" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-11" value="&lt;h1&gt;US2&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="345" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c5gVdFEDWXmV88MrKOcX-12" value="&lt;h1&gt;US3&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="595" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

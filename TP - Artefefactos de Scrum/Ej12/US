@@ -1,0 +1,44 @@
+Responsable local
+	
+	UA: Trabajar
+
+		UT: Ingresar paciente
+
+			US1:
+				- Como responsable quiero ingresar pacientes en el sistema para que sean atendidos.
+				- CA:
+					- El paciente debera informar su DNI.
+					- La responsable debera ingresar el DNI del paciente al sistema.
+					- Verificar la historia clinica del paciente interactuando con el SIHC.
+					- En el caso de que el paciente no tenga historia clinica, se debera cargar nombre, apellido, direccion y fecha de nacimiento.
+					- Enviar los datos anteriores al SIHC para crear la historia clinica.
+					- La responsable debera cargar dia y hora de ingreso al hospital, enfermedad actual, y tipo de cama que ocupa.
+					- La responsable debera informar la nueva capacidad del hospital indicando el tipo de cama.
+
+Responsable IT
+
+	UA: Trabajar
+
+		UT: Agregar hospital
+
+			US2:
+				- Como responsable IT quiero poder agregar nuevos hoapitales al sistema para mejorar el sistema de salud.
+				- CA:
+					- Solicitar nombre, zona sanitaria, ciudad y direccion del hospital.
+					- Solicitar nombre, apellido, nombre de usuario, contraseña, casilla de email y hospital para asignar un responsable local.
+					- Informar al responsable local designado sobre sus datos de acceso al sistema.
+
+Ministerio de salud
+
+	UA: Administrar
+
+		UT: Controlar
+
+			US3:
+				- Como Ministerio de Salud quiero poder ver un mapa de la provincia para conocer la ocupacion de camas en los hospitales de la region.
+				- CA:
+					- Brindar un mapa de calor que indique la disponibilidad de camas de todos los hospitales registrados.
+					- Brindar la opcion de filtrar por tipo de cama y/o enfermedad.
+					- Verificar que se genere un reporte de disponibilidad de camas todos los lunes a las 8 de la mañana, ordenado por ciudad (alfabetico descendente).
+					- Guardar el reporte en el Google Drive del Ministerio de salud.
+					- Verificar que se encuentre un link al reporte en el mapa de calor generado.
