@@ -1,0 +1,58 @@
+Vecino
+
+	UA: Interactuar con aplicacion
+
+		UT: Usar herramienta
+
+			US1:
+				- Como vecino quiero poder reservar una herramienta para usarla.
+				- CA:
+					- Brindar al vecino una lista de todas las herramientas existentes.
+					- El vecino debera seleccionar una herramienta de la lista.
+					- El vecino debera indicar dia y horario de comienzo y fin del prestamo.
+					- Verificar que el horario de comienzo del prestamo sea mayor a 12 horas desde el momento actual.
+					- Verificar que la herramienta se encuentre disponible en la fecha solicitada.
+					- El vecino debera ingresar su nombre, apellido, email y direccion.
+					- Registrar la solicitud.
+
+			US2:
+				- Como vecino quiero poder recibir un codigo de acceso para acceder a la herramienta.
+				- CA:
+					- Verificar que el horario y fecha actual sea 5 minutos antes del inicio de una reserva o 5 minutos antes del horario de finalizacion de una reserva.
+					- Conectarse con la API online para generar el codigo de acceso.
+					- Enviar el codigo de acceso al email del vecino propietario.
+
+			US4:
+				- Como vecino quiero poder ver un calendario con todas las herramientas reservadas para saber cuando podre usarlas.
+				- CA:
+					- Brindar al vecino un calendario con cada reserva de herramienta en el dia correspondiente, junto con el tiempo de duracion de la reserva.
+					- Brindar al vecino la posibilidad de realizar una reserva de herramienta (Ver US1).
+
+		UT: Reportar
+
+			US3:
+				- Como vecino quiero poder denunciar una herramienta faltante para dejar constancia.
+				- CA:
+					- El vecino debera informar que herramienta tiene reservada.
+					- Verificar que el vecino tiene esa herramienta reservada.
+					- El vecino debera agregar un comentario en formato texto sobre la situacion.
+					- Enviar la denuncia al email del responsable del proyecto.
+
+
+Responsable
+
+	UA: Mantener
+
+		UT: Controlar
+
+			US5:
+				- Como responsable del proyecto quiero poder controlar y modificar el stock de herramientas para un mejor servicio.
+				- CA:
+					- Brindar al responsable la opcion de agregar, eliminar o dar de baja herramientas.
+					- Cancelar reservas asociadas de la herramienta elimnada o dada de baja.
+					- Informar a los vecinos dueños de la reserva sobre la cancelacion.
+
+			US6:
+				- Como responsable del proyecto quiero poder ver estadisticas de uso de las herramientas para saber que herramientas comprar.
+				- CA:
+					- Brindar al responsable una pagina con las estadisticas de uso de cada herramienta.
