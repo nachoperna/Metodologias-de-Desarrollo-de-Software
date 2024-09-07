@@ -1,0 +1,46 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Página-1" id="LOCtEgFOGwl2n7a4SyrO">
+    <mxGraphModel dx="1114" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-xusTOxlDGioq74rnfOU-1" value="&lt;h1&gt;Usuario&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="70" y="210" width="620" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-2" value="&lt;h1&gt;Registrarme&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="70" y="290" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-3" value="&lt;h1&gt;Usar servicios&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cdeb8b;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="270" y="290" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-4" value="&lt;h1&gt;Crear cuenta&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="70" y="370" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-5" value="&lt;h1&gt;Buscar&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="270" y="370" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-6" value="&lt;h1&gt;Agregar contenido&lt;/h1&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="460" y="370" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-7" value="&lt;h1&gt;US1&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="115" y="450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-8" value="&lt;h1&gt;US2&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="115" y="545" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-9" value="&lt;h1&gt;US3&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="315" y="450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-10" value="&lt;h1&gt;US4&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="535" y="450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-11" value="&lt;h1&gt;US5&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="535" y="545" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-xusTOxlDGioq74rnfOU-12" value="&lt;h1&gt;US6&lt;/h1&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcccc;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="535" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,59 @@
+Usuario
+
+	UA: Registrarme
+
+		UT: Crear cuenta
+
+			US1:
+				- Como usuario quiero poder registrarme en la plataforma para usarla.
+				- CA:
+					- El usuario debera ingresar nombre, apellido, fecha de nacimiento, generos musicales de su gusto (Rock, pop, folk y cumbia), nombre de usuario, email y contraseña.
+					- Verificar que la contraseña contenga al menos 8 caracteres alfanumericos.
+					- Validar cuenta (Ver US2)
+					- Si la validacion fue exitosa, activar la cuenta del usuario.
+
+			US2:
+				- Como usuario quiero poder validar mi cuenta para usar la aplicacion.
+				- CA:
+					- Enviar un mail al usuario con el email registrado, que contenga el link de validacion e informando un plazo de 48 horas.
+					- Verificar que el usuario ingrese al link de validacion en un plazo menor de 48 horas desde el envio del mail.
+					- Validar exitosamente la cuenta.
+
+	UA: Usar servicios
+
+		UT: Buscar
+
+			US3:
+				- Como usuario quiero poder buscar en la plataforma para ver que onda.
+				- CA:
+					- Brindar al usuario la opcion de buscar artistas, albumes, canciones y/o playlists.
+					- Brindar la opcion de ordenar el resultado de busqueda por relevancia, alfabeticamente o numero de reproducciones.
+					- Brindar la opcion de filtrar segun el tipo artista, album, cancion, playlist.
+					- Brindar al usuario la opcion de seleccionar un resultado y reproducirlo.
+
+		UT: Agregar contenido
+		
+			US4:
+				- Como usuario quiero poder agregar musica a la plataforma para enriquecerla.
+				- CA:
+					- Verificar que el usuario este registrado en la plataforma.
+					- Si el usuario desea agregar un artista, debera ingresar nombre, apellido, nombre artistico, nacionalidad y opcionalmente fotos del mismo.
+					- Si el usuario desea agregar un album, debera ingresar nombre, año de edicion, cantidad de canciones, descripcion, imagen de caratula y artista al que pertenece, y cancion/es del mismo.
+					- Brindar la opcion de agregar artista al agregar un album.
+					- Brindar la opcion de agregar una cancion al album (Ver US5).
+					- Si el usuario desea agregar una cancion, debera subir el archivo de audio en formato mp3, indicar nombre de cancion y opcionalmente letra de la misma.
+
+			US5:
+				- Como usuario quiero poder agregar una cancion a un album para ...
+				- CA:
+					- El usuario debera ingresar el nombre del album.
+					- Verificar la existencia del album en la plataforma.
+					- Si el album no existe, notificar al usuario de la situacion y cancelar operacion.
+					- El usuario debera subir el archivo de audio en formato mp3, indicar nombre de cancion y opcionalmente letra de la misma.
+
+			US6:
+				- Como usuario quiero poder crear una playlist para escucharla.
+				- CA:
+					- Verificar que el usuario se encuentre registrado en la plataforma.
+					- Brindar la opcion de agregar musica a la playlist (Ver US4).
+					- Registrar la playlist en el sistema.
