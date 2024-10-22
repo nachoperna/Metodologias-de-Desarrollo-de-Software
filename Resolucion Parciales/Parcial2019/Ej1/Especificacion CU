@@ -1,0 +1,28 @@
+- Especificacion CU:	
+	- Nombre: Ver mapa
+	- Descripcion: Este CU implementa funcionalidad para visualizar un mapa de la ciudad donde hay denuncias no resueltas y brindar la posibilidad de marcar alguna como resuelta.
+	- Actor primario: Jefe de cuadrilla.
+	- Actor secundario: Subsecretario de medio ambiente.
+	- Trigger: Este CU se activa cuando el jefe de cuadrilla o el subsecretario de medio ambiente quieren ver el mapa de denuncias de la ciudad.
+	- Flujo basico:
+		1. Este CU comienza cuando jefe de cuadrilla o el subsecretario de medio ambiente quieren ver el mapa de denuncias no resueltas de la ciudad.
+		2. Generar o actualizar el mapa con los lugares marcados de denuncias realizadas por ciudadanos que aun no fueron resueltas.
+		3. Proveer al jefe de cuadrilla la opcion de resolver una de las denuncias marcadas en el mapa.
+		4. [PtoExt] Resolver denuncia.
+		5. Fin CU.
+	- Caso de Uso que extiende: Extiende el CU Resolver denuncia en el punto de extension PtoExt cuando se cumple la condicion de que el Jefe de cuadrilla quiere resolver una denuncia marcada en el mapa de denuncias no resueltas.
+
+- Especificacion CU:
+	- Nombre: Resolver denuncia.
+	- Descripcion: Este CU implementa funcionalidad para permitirle al Jefe de cuadrilla resolver una denuncia de un ciudadano.
+	- Actor primario: Jefe de cuadrilla.
+	- Actor secundario: Ciudadano.
+	- Precondicion: El Jefe de cuadrilla recolecto la basura del lugar de la denuncia que quiere marcar como resuelta.
+	- Trigger: Este CU se activa cuando el Jefe de cuadrilla quiere marcar una denuncia como resuelta.
+	- Flujo basico: 
+		1. Este CU comienza cuando el Jefe de cuadrilla quiere marcar una denuncia como resuelta.
+		2. Se le solicita al Jefe de cuadrilla el numero de denuncia, dia y horario donde se recolecto la basura junto con una foto del lugar limpio.
+		3. El Jefe de cuadrilla proporciona el numero de denuncia, dia, horario y foto del lugar.
+		4. Se marca la denuncia como resuelta.
+		5. Se notifica al Ciudadano sobre la resolucion de su denuncia.
+		6. Fin CU.
