@@ -1,0 +1,36 @@
+- Especificacion CU:
+	- Nombre: Cargar paciente
+	- Descripcion: Este CU implementa funcionalidad para permitirle a la responsable local del hospital ingresar un paciente en el sistema.
+	- Actor primario: Responsable local.
+	- Actor secundario: Paciente, SIHC.
+	- Trigger: Este CU se activa cuando la responsable local quiere ingresar un paciente en el sistema.
+	- Flujo basico:
+		1. Este CU comienza cuando la responsable local quiere cargar un paciente.
+		2. La responsable local ingresa el DNI del paciente.
+		3. Se interactua con el SIHC para obtener la historia clinica del paciente.
+		4. Si el paciente tiene historia clinica, el SIHC le entrega al sistema la historia clinica (nombre, apellido, direccion, fecha de nacimiento y registro de atenciones del paciente en hospitales de la provincia).
+		5. La responsable local ingresa dia y hora de ingreso al hospital.
+		6. La responsable local ingresa la enfermedad que esta cursando el paciente y el tipo de cama que ocupa (sala general, terapia intermedia o terapia intensiva).
+		7. [INCLUDE] Cargar capacidad.
+		8. Fin CU.
+	- Flujo alternativo (4.):
+		4.1) El SIHC informa que el paciente no cuenta con historia clinica.
+		4.2) Se le solicita al paciente nombre, apellido, direccion y fecha de nacimiento.
+		4.3) El paciente entrega los datos solicitados.
+		4.4) Se envian los datos al SIHC para la creacion de su historia clinica.
+		4.5) Fin flujo alternativo.
+	- Caso de Uso que incluye: incluye Cargar capacidad.
+	- Postcondicion: El paciente es ingresado exitosamente en el sistema.
+
+- Especificacion CU:
+	- Nombre: Cargar capacidad.
+	- Descripcion: Este CU implementa funcionalidad para permitirle a la responsable local cargar o actualizar la capacidad del hospital.
+	- Actor primario: Responsable local.
+	- Actor secundario: -
+	- Trigger: Este CU se activa cuando la responsable local quiere cargar o actualizar la capacidad del hospital.
+	- Flujo basico: 
+		1. Este CU comienza cuando la responsable local quiere actualizar la cantidad de camas totales del hsopital.
+		2. La responsable local indica el tipo de cama a cargar (sala general, terapia intermedia o terapia intensiva).
+		3. La responsable local repite el paso 2 por todas las camas que quiera cargar en el momento.
+		4. Se actualiza la cantidad total de camas del sistema sumando la cantidad ingresada actualmente por la responsable local.
+		5. Fin CU.

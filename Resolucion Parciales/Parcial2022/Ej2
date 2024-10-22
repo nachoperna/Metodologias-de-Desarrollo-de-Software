@@ -1,0 +1,17 @@
+a) ¿Cuales son las etapas del ciclo de vida en un proceso de desarrollo de software?
+	Captura de rquerimientos, Analisis y diseño, Implementacion, Prueba y Mantenimiento.
+
+b) ¿Cuales son los eventos de Scrum?
+	Sprint planning, Sprint, Daily Scrum, Sprint review, Sprint retrospective.
+
+c) ¿En que evento de Scrum se realiza el diseño del sistema?
+	En el Sprint, donde tambien se desarrolla el producto en si.
+
+d) ¿En que evento de Scrum se realiza el testing del sistema?
+	Se realiza tambien en el Sprint para luego llegar al Sprint Review con un producto lo mas consistente posible para enseñarlo a los Stakeholders.
+
+e) ¿Que tecnica propone Scrum para especificar los PBIs?
+	Scrum propone principalmente las User Stories para especficiar los PBIs pero se pueden utilizar tambien Casos de Uso u otros modelos.
+
+f) Cuando quiero modelar la interaccion entre objetos ¿que diagrama UML debo utilizar?
+	Se debe utilizar el Diagrama de Secuencia que permite modelar objetos de clases y llamados entre los mismos, asi como creaciones de estos.
