@@ -1,0 +1,75 @@
+Usuario
+	
+	User Activie: Iniciarse en plataforma
+
+		User Task: Registrarse
+
+			US1:
+				- Como usuario quiero poder registrarme en el sistema para utilizar la plataforma web.
+				- Criterios de aceptacion:
+					- Se solicita al usuario su nombre, apellido, fecha de nacimiento, generos musicales que le gustan, nombre de usuario, email.
+					- Se solicita al usuario una contraseña.
+					- El usuario provee la informacion solicitada por el sistema.
+					- Si la contraseña ingresada por el usuario no es de al menos 8 caracteres alfanumericos, se vuelve al Criterio de Aceptacion 2.
+					- Se envia un mail al usuario con un link de validacion (Ver US2).
+					- Si la validacion fue exitosa, se activa la cuenta del usuario.
+					- El usuario ingresa a la plataforma.
+
+			US2:
+				- Como usuario quiero poder validar mi cuenta para registrar en la plataforma web.
+				- Criterios de aceptacion:
+					- Se comienza a controlar un plazo de 48 horas para que el usuario valide su cuenta.
+					- El usuario ingresa a su mail y al link de validacion enviado por el sistema.
+					- Si el plazo es menor a 48 horas, la validacion fue exitosa.
+					- Si el plazo es igual o mayor a 48 horas, la validacion fue erronea y se informa al usuario.
+
+	User Activie: Interactuar con plataforma
+
+		User Task: Buscar contenido
+
+			US3:
+				- Como usuario quiero poder buscar todo tipo de contenido dentro de la plataforma.
+				- Criterios de aceptacion:
+					- El usuario ingresa una o varias palabras en el cuadro de busqueda de la plataforma.
+					- Se proveen todos los resultados de contenidos que incluyan la/s palabra/s ingresadas por el usuario.
+					- Proveer la opcion de ordenar los resultados por relevancia, alfabeticamente o numero de reproducciones.
+					- Proveer la opcion de filtrar el resultado por tipo artista, album, cancion o playlist.
+					- Proveer la opcion de reproducir cualquier resultado de la busqueda.
+
+		User Task: Cargar contenido
+
+			US4:
+				- Como usuario quiero poder agregar un artista a la plataforma para enriquecerla musicalmente.
+				- Criterios de aceptacion:
+					- Se le solicita al usuario que ingrese el nombre y apellido del artista, nombre artistico, nacionalidad y fotos del mismo.
+					- El usuario brinda al sistema la informacion pedida.
+					- Se verifica que la nacionalidad ingresada por el usuario sea valida.
+					- Si la nacionalidad es valida, el artista se carga exitosamente en el sistema.
+
+			US5:
+				- Como usuario quiero poder agregar un album a la plataforma para enriquecerla musicalmente.
+				- Criterios de aceptacion:
+					- Se solicita al usuario el nombre del album, año de edicion, cantidad de canciones, descripcion, imagen de caratula y artista al que pertenece.
+					- El usuario ingresa los datos solicitados por el sistema.
+					- Si el artista ingresado por el usuario no existe en la plataforma, se lo redirige a la carga de ese artista (Ver US4).
+					- Si el artista existe en el sistema, se le solicita al usuario que cargue una o varias canciones dentro del album (Ver US6).
+					- El album se carga exitosamente en el sistema.
+
+			US6:
+				- Como usuario quiero poder cargar una cancion a un album para completarlo.
+				- Criterios de aceptacion:
+					- Se solicita al usuario que ingrese el nombre de un album.
+					- El usuario ingresa el nombre del album.
+					- Verificar la existencia del album.
+					- Si el album no existe, informar la situacion y terminar el proceso de carga de cancion.
+					- Solicitar al usuario que suba a la plataforma el archivo de audio de la cancion en formato mp3, nombre de la cancion y letra (opcional).
+					- El usuario brinda los datos solicitados.
+					- Se carga exitosamente la cancion.
+
+			US7:
+				- Como usuario quiero poder crear playlists a la plataforma para enriquecerla musicalmente.
+				- Criterios de aceptacion:
+					- Se solicita al usuario ingresar nombre de la playlist y artistas, albumes, canciones y/o playlist que la conforman.
+					- El usuario brinda el nombre de la playlist y el contenido solicitado que la conforma.
+					- Se verifica la existencia en la plataforma de los artistas, albumes, canciones y/o playlists ingresadas por el usuario.
+					- Si no existe/n se informa de la situacion y no cancela la creacion de la playlist.
